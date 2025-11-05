@@ -1,8 +1,8 @@
 # 开发
 
 ```bash
-# Python 3.10.6
-python -m venv venv          
-source venv/bin/activate
-pip freeze > requirements.txt
+# Python 3.9
+conda create -n d2l python=3.9
+conda activate d2l
+pip install -r requirements.txt
 ```
