@@ -71,8 +71,8 @@ deeplearning/
 
 ## 技术栈
 
-- PyTorch 2.1.0 - 主要框架
-- Jupyter Lab - 开发环境
+- PyTorch 1.12.0 - 主要框架
+- Jupyter Lab 4.3.4 - 开发环境
 - D2L 1.0.3 - 《动手学深度学习》工具库
 
 ## 开发规范
