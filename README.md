@@ -1,13 +1,13 @@
 # 深度学习实践与学习
 
-个人深度学习学习仓库，记录从基础到进阶的完整学习过程。
+个人深度学习学习仓库，基于 PyTorch 的系统化学习记录。
 
 ## 学习理念
 
-- 理论先行 - 理解数学原理和算法本质
-- 从零实现 - 手写核心算法，掌握实现细节
-- 框架应用 - PyTorch/TensorFlow 实践
-- 对比学习 - 双框架对比实现
+- 理论先行 - 数学原理和算法本质
+- 从零实现 - 手写核心算法
+- 框架应用 - PyTorch 实践
+- 渐进迭代 - 持续更新最新技术
 
 ## 环境配置
 
@@ -25,50 +25,55 @@ jupyter lab
 
 ## 学习路径
 
-### 阶段 1：基础数学
-**目录**: `d2l-zh/` 和 `tensorflow/week1/`
-- 线性代数、微积分、概率论
-- 数据操作与预处理
+### 核心学习（pytorch_2025/）
 
-### 阶段 2：基础模型
-**目录**: `pytorch_2024/` 和 `tensorflow/week2/`
-- 线性回归（从零实现 → 框架实现）
-- 多层感知机（MLP）
-- Softmax 回归
+**month_11/ - 系统化基础**
+- chapter_1: 预备知识
+  - 数据预处理、线性代数、微积分
+  - 概率论、自动微分
+- chapter_2: 线性神经网络
+  - 线性回归（从零实现 → 简洁实现）
+  - Softmax 回归
+  - 图像分类数据集
+  - MLP（从零实现 → 简洁实现）
+  - 欠拟合与过拟合
 
-### 阶段 3：核心网络
-**目录**: `pytorch_2024/week3/`
-- CNN、RNN、LSTM、GRU
-- 批标准化、Dropout
+**month_10/ - 大模型实践**
+- GPT-2 简单实现
 
-### 阶段 4：前沿技术
-**目录**: `pytorch_2024/week4/` 和 `pytorch_2025/`
-- Transformer、注意力机制
-- 文本生成、Diffusion Models
-- Flash Attention
+**month_7/ - 优化技术**
+- Flash Attention 实现
+- 基础知识复习（prerequisites）
+
+**month_2/ - 前沿模型**
+- DeepSeek R1 实践
+
+### 参考资料
+- `d2l-zh/` - 《动手学深度学习》完整教材
+- `pytorch_2024/` - 早期学习记录
+- `tensorflow/` - TensorFlow 对比实现
 
 ## 项目结构
 
 ```
 deeplearning/
-├── d2l-zh/                     # 《动手学深度学习》完整实现
-├── pytorch_2024/               # PyTorch 系统学习
-│   ├── week3/                  # 核心模型（Linear, MLP, CNN, RNN）
-│   └── week4/                  # 高级主题（Transformer, 文本生成）
-├── pytorch_2025/               # 最新技术实践
-│   └── month_7/                # Flash Attention
-├── tensorflow/                 # TensorFlow 学习路径
-│   ├── week1/                  # 基础数学
-│   └── week2/                  # 线性回归
-└── practise/                   # 工具和实验
+├── pytorch_2025/               # 主要学习目录
+│   ├── month_11/               # 系统化基础（2025.11）
+│   │   ├── chapter_1/          # 预备知识（数据、线代、微积分、概率、自动微分）
+│   │   └── chapter_2/          # 线性神经网络（回归、分类、MLP、过拟合）
+│   ├── month_10/               # GPT-2 实现（2025.10）
+│   ├── month_7/                # Flash Attention（2025.07）
+│   └── month_2/                # DeepSeek R1（2025.02）
+├── d2l-zh/                     # 《动手学深度学习》教材参考
+├── pytorch_2024/               # 2024 年学习记录
+└── tensorflow/                 # TensorFlow 对比学习
 ```
 
 ## 技术栈
 
-- **PyTorch 2.1.0** - 主要框架
-- **TensorFlow** - 对比学习
-- **D2L 1.0.3** - 《动手学深度学习》工具库
-- **Jupyter Lab** - 开发环境
+- PyTorch 2.1.0 - 主要框架
+- Jupyter Lab - 开发环境
+- D2L 1.0.3 - 《动手学深度学习》工具库
 
 ## 开发规范
 
