@@ -7,7 +7,8 @@
       "Bash(pip show:*)",
       "Bash(git commit:*)",
       "Bash(echo:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

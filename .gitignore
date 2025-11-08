@@ -99,6 +99,11 @@ models/
 saved_models/
 weights/
 
+# AutoGluon models
+autogluon_models/
+**/autogluon_models/
+*.ag
+
 # Datasets (large files)
 *.zip
 *.tar
