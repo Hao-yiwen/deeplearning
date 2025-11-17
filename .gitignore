@@ -160,3 +160,5 @@ htmlcov/
 coverage.xml
 *.cover
 .hypothesis/
+
+**/classify-leaves/
