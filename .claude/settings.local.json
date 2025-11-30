@@ -10,7 +10,15 @@
       "Bash(cat:*)",
       "Bash(git add:*)",
       "Bash(rm:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(python3:*)",
+      "Bash(source ~/miniforge3/envs/d2l/bin/activate)",
+      "Bash(~/miniforge3/envs/d2l/bin/python:*)",
+      "Bash(curl:*)",
+      "Bash(~/miniforge3/envs/d2l/bin/pip show:*)",
+      "Bash(unzip:*)",
+      "Bash(mv:*)",
+      "Bash(source venv/bin/activate)"
     ],
     "deny": [],
     "ask": []
