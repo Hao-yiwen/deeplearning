@@ -110,10 +110,27 @@ autogluon_models/
 *.tar.gz
 *.rar
 *.7z
-data/
+# 只忽略仓库根目录的 data/。tensorflow/data 里的小 CSV 可以提交。
+/data/
 datasets/
 !data/README.md
 !datasets/README.md
+
+# 教程运行后生成的权重和中间文件
+*.safetensors
+*.params
+*.npy
+__MACOSX/
+x-file
+x-files
+mydict
+my_mlp
+submission.csv
+submission_autogluon.csv
+
+# 加州房价完整表很大，仓库只保留 sample
+pytorch_2025/month_11/chapter_3_kaggle/california-house-prices/train.csv
+pytorch_2025/month_11/chapter_3_kaggle/california-house-prices/test.csv
 
 # Logs and outputs
 logs/

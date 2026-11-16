@@ -1,0 +1,4 @@
+# 可选。week1 的概率笔记还会用到 tensorflow-probability。
+# pip install -r requirements-tensorflow.txt
+tensorflow==2.21.0
+tensorflow-probability==0.25.0
