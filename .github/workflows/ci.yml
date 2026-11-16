@@ -1,0 +1,24 @@
+name: 检查
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install --no-deps -r requirements-d2l.txt
+      - name: 笔记与冒烟测试
+        run: |
+          python tests/test_notebooks.py
+          python examples/smoke_cpu.py
